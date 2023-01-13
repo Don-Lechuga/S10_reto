@@ -1,0 +1,20 @@
+<div class="container m-auto   d-flex">
+
+  <div class="container m-auto d-flex">
+    <app-c3 (guardarDato)="addcurso($event)"></app-c3>
+  </div>
+
+<div class="container px-1 pt-5 border  border-2">
+  <div class="row m-auto col-8">
+    <label class="text-center fs-4 mb-3 p-2">Lista de tareas</label>
+    <div class="p-3 border rounded-4">
+      <ul class="list-group list-group-flush p-4 fs-4">
+        <li *ngFor="let curso of cursos">{{curso}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
